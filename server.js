@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const { google } = require('googleapis');
 require('dotenv').config();
-const credentials = require('./credentials.json');
+const credentials = JSON.parse(process.env.CREDENTIALS);
 
 const app = express();
 
